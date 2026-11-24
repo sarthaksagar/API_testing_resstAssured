@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SmartHR Enterprise Full API Automation Suite" verbose="1">
+
+    <test name="Module 1: Authentication & Tenant Security">
+        <classes>
+            <class name="com.api.tests.SmartHrAuthTest"/>
+            <class name="com.api.tests.security.TenantIsolationTests"/>
+        </classes>
+    </test>
+
+    <test name="Module 2: Core HR (Department, Designation, Employee)">
+        <classes>
+            <class name="com.api.tests.core.DepartmentTests"/>
+            <class name="com.api.tests.core.DesignationTests"/>
+            <class name="com.api.tests.core.EmployeeTests"/>
+        </classes>
+    </test>
+
+    <test name="Module 3: Leave & Attendance Management">
+        <classes>
+            <class name="com.api.tests.leave.LeaveTests"/>
+            <class name="com.api.tests.attendance.AttendanceTests"/>
+        </classes>
+    </test>
+
+    <test name="Module 4: Payroll, Salary & Tax Slabs">
+        <classes>
+            <class name="com.api.tests.payroll.PayrollTests"/>
+        </classes>
+    </test>
+
+    <test name="Module 5: Asset Management">
+        <classes>
+            <class name="com.api.tests.asset.AssetTests"/>
+        </classes>
+    </test>
+
+    <test name="Module 6: Recruitment & Vacancy Management">
+        <classes>
+            <class name="com.api.tests.recruitment.RecruitmentTests"/>
+        </classes>
+    </test>
+
+</suite>
